@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+    <record id="mrp_workcenter_form_inherit" model="ir.ui.view">
+      <field name="name">mrp.workcenter.form.inherit</field>
+      <field name="model">mrp.workcenter</field>
+      <field name="inherit_id" ref="mrp.mrp_workcenter_view"/>
+      <field name="arch" type="xml">
+
+        <!-- Remove the float_time widgets that would only accept hours and minutes -->
+        <field name="time_cycle" position="attributes">
+          <attribute name="widget"></attribute>
+        </field>
+
+        <field name="time_start" position="attributes">
+          <attribute name="widget"></attribute>
+        </field>
+
+        <field name="time_stop" position="attributes">
+          <attribute name="widget"></attribute>
+        </field>
+
+      </field>
+    </record>
+  </data>
+</openerp>

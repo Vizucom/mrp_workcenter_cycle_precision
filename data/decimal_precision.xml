@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record model="decimal.precision" id="precision_cycle">
+            <field name="name">Workcenter Cycles</field>
+            <field name="digits">6</field>
+        </record>
+    </data>
+</openerp>
